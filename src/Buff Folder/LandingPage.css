@@ -1,0 +1,409 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter-font';
+}
+
+@font-face {
+    font-family: 'Inter-font';
+    src: url('../Fonts/Inter-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: url('../Fonts/Inter-Bold.ttf');
+}
+
+.heading a,
+.account-container a {
+    text-decoration: none;
+} 
+
+.landing-container {
+    background: #131415;
+}
+
+.heading {
+    background: #131415;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.heading h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 52px;
+    font-family: 'Inter-Bold';
+}
+
+.heading p,
+.finance p {
+    color: #9A9FA8;
+    font-size: 20px;
+    font-weight: 900;
+    margin: 24px 350px;
+    text-align: center;
+}
+
+.heading p span {
+    color: #fff;
+}
+
+.heading h1 span {
+    color: rgb(6, 193, 255);
+    font-family: 'Inter-Bold';
+}
+
+.heading button,
+.account-container button {
+    background: linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: .4em;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.retire {
+    text-decoration: line-through #fff;
+}
+
+.buss {
+    color: #fff;
+    text-align: center;
+    padding: 120px  0px;
+    background: #000;
+}
+
+.finance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.finance h1 {
+    color: #fff;
+    font-size: 52px;
+    font-weight: bold;
+    font-family: 'Inter-Bold';
+}
+
+.finance h1 span {
+    background: linear-gradient(135deg, rgb(102, 153, 255) 0%, rgb(255, 51, 102) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter-Bold';
+}
+
+.finance p {
+  margin: 10px 300px;
+}
+
+.finance p span {
+    color: #fff;
+}
+
+.support-container {
+    padding: 50px 20px 10px 20px;
+}
+
+.buff-service {
+    display: flex;
+    align-items: center;
+    margin-left: -15.5em;
+    transform: scale(.7);
+}
+
+
+.company-outro {
+    background: #000;
+    justify-content: center;
+    padding: 120px 0px;
+    font-weight: bold;
+}
+
+.guarantee h1 {
+    font-size: 52px;
+    width: 40vw;
+    font-family: 'Inter-Bold';
+}
+
+.guarantee h2 {
+    text-align: left;
+    max-width: 30vw;
+    font-size: 22px;
+    margin-bottom: 22px;
+    font-family: 'Inter-Bold';
+}
+
+.guarantee h1 span {
+    background: linear-gradient(135deg, rgb(203, 94, 238) 0%, rgb(75, 225, 236) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter-Bold';
+}
+
+.guarantee p {
+    color: #9A9FA8;
+}
+
+
+.guarantee p span {
+    color: #fff;
+}
+
+.outro-inner, 
+.account-container {
+    color: #fff;
+    width: 85%;
+    margin:  auto;
+}
+
+
+.company-attr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3em;
+    margin-top: 10em;
+}
+
+.warning {
+    margin-top: 40px;
+}
+
+.warning p {
+    font-style: italic;
+    font-size: 22px;
+    color: #9A9FA8;
+    padding: 0px 200px;
+    text-align: center;
+}
+
+
+.account-container {
+    margin-top: 10em;
+}
+
+.account-container h1 {
+    font-size: 48px;
+    margin-bottom: 22px;
+    font-family: 'Inter-Bold';
+}
+
+.account-container h1 span {
+    background: linear-gradient(135deg, rgb(102, 153, 255) 0%, rgb(255, 51, 102) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter-Bold';
+}
+
+.account-container button {
+    background: linear-gradient(135deg, rgb(102, 153, 255) 0%, rgb(255, 51, 102) 100%);
+}
+
+.account-container h3 span {
+    color: #9A9FA8;
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 1024px) {
+    .buff-service {
+        transform: scale(.5);
+        margin-left: -19em;
+    }
+
+    .company-attr {
+        gap: 2.8em;
+    }
+
+    .guarantee h1 {
+        width: 60vw;
+    }
+
+    .guarantee h2 {
+        max-width: 49vw;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .heading p, 
+    .finance p {
+        margin: 24px 38px;
+    }
+
+    .warning p {
+        padding: 0px 38px;
+    }
+
+    .buff-service {
+        transform: scale(.4);
+        margin-left: -21em;
+    }
+
+    .company-attr {
+        gap: .8em;
+    }
+
+    .guarantee h1 {
+        width: 70vw;
+    }
+
+    .guarantee h2 {
+        max-width: 62vw;
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    .heading {
+        height: 100vh;
+    }
+
+    .buff-service {
+        flex-direction: column;
+        margin-left: 0px;
+        gap: 27em;
+    }
+
+    .company-attr {
+        flex-direction: column;
+        gap: 5em;
+    }
+
+    .guarantee h1 {
+        width: auto;
+        font-size: 40px;
+    }
+
+    .guarantee h2 {
+        margin-top: 2em;
+        max-width: none;
+        font-size: 16px;
+    }
+
+    .heading h1 {
+        font-size: 40px;
+    }
+
+    .account-container h1 {
+        font-size: 40px;
+    }
+
+    .finance h1 {
+        font-size: 37px;
+    }
+
+    .heading p,
+    .finance p {
+        font-size: 17px;
+    }
+
+    .finance {
+        margin-bottom: -75em;
+    }
+
+    .heading button,
+    .account-container button {
+        font-size: 14px;
+    }
+
+    .buss h2 {
+        font-size: 22px;
+    }
+    
+    .support-container {
+        margin-bottom: -70em;
+    }
+
+    .warning p {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 375px) {
+    .heading h1,
+    .guarantee h1,
+    .account-container h1 {
+        font-size: 35px;
+    }
+
+    .finance h1 {
+        font-size: 31px;
+    }
+
+    .guarantee h2,
+    .guarantee p {
+        font-size: 14px;
+    }
+
+    .heading p,
+    .finance p {
+        font-size: 15px;
+    }
+
+    .heading button,
+    .account-container button {
+        font-size: 12px;
+    }
+
+    .warning p {
+        font-size: 16px;
+    }
+
+    .account-container h3 {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 320px) {
+    .heading h1,
+    .guarantee h1,
+    .account-container h1 {
+        font-size: 27px;
+    }
+
+    .heading p,
+    .finance p {
+        font-size: 11px;
+    }
+    
+
+    .finance h1 {
+        font-size: 26px;
+    }
+
+    .buss h2 {
+        font-size: 16px;
+    }
+
+    .guarantee h2,
+    .guarantee p {
+        font-size: 12px;
+    }
+
+    .account-container h3 {
+        font-size: 12px;
+    }
+}
+
