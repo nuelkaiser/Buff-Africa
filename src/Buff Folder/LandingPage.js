@@ -36,7 +36,7 @@ function LandingPage() {
                 </div>
                 <div className='support-container'>
                     <div className='finance'>
-                        <h1>Fanacial Software that <br /> <span>accelerate</span> your growth. </h1>
+                        <h1>Financial Software that <br /> <span>accelerate</span> your growth. </h1>
                         <p>Buffer allows you invest your pension <span>wbbases on</span> that which helps fuel your company's growth</p>
                     </div>
                     <div className='buff-service'>
