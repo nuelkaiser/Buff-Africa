@@ -33,6 +33,11 @@
     transform: scale(.9);
 }
 
+.img:hover {
+    transform: scale(1);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1) 200ms;
+}
+
 .learn {
     margin-top: 25px;
     display: flex;

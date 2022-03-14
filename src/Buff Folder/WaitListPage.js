@@ -4,17 +4,17 @@ import './WaitListPage.css';
 import { AiFillThunderbolt } from 'react-icons/ai';
 import emailjs from 'emailjs-com';
 
-function sendSubscribers (e) {
+function sendSubscribers(e) {
   e.preventDefault();
 
- emailjs.sendForm('service_pc18qbj', 'template_rdstg3a', e.target, 'gDwc1b1z9wwHYSl1p')
+  emailjs.sendForm('service_pc18qbj', 'template_rdstg3a', e.target, 'gDwc1b1z9wwHYSl1p')
     .then((result) => {
-        console.log(result.text);
+      console.log(result.text);
     }, (error) => {
-        console.log(error.text);
+      console.log(error.text);
     });
 
-    e.target.reset()
+  e.target.reset()
 }
 
 function WaitListPage() {
@@ -42,8 +42,8 @@ function WaitListPage() {
 
             <div className='form-container'>
               <form onSubmit={sendSubscribers}>
+                <input className='name-input' placeholder='First Name' type='text' name='name' />
                 <input className='email-input' placeholder='Email' type='email' name='email' />
-                <input className='name-input' placeholder='First Name' type='text'  name='name'/>
 
 
                 <div className='submit-btn'>
